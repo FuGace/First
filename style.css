@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+   text-decoration: none;
+   list-style: none;
+    }
+body{
+    font-family: "Arial MT";
+    max-width: 1200px;
+    width: 100%;
+}  
+.header{    
+    color: #ffffff;
+    background: #000000; 
+    width: 100%;    
+} 
+.info,
+.care,
+.number,
+.select,
+.account,
+.search{
+    display: inline-block;
+    font-size: 11px;
+}
+.number{
+    font-size: 12px;
+    padding-right: 2px;
+} 
+.care{
+    padding-top: 11px;
+    padding-bottom: 11px;
+    
+} 
+   
+.info{
+    margin-left: 9.75%;
+}
+
+.select {
+    margin-left: 200px;
+    border-left: 1px solid #444444;
+    padding-left: 15px;
+    height: auto;
+}
+
+.logo{
+ display: flex;  
+ justify-content: flex-start; 
+ width: 100%;
+ padding-left: 9.5%;
+}
+
+.graficlogo{
+ box-sizing: border-box;
+ max-width: 100%;
+}
