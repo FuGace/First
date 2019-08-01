@@ -1,62 +1,172 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-a{
-    text-decoration: none;
+
+/* global styles */
+
+.link-no-decoration {
+  text-decoration: none;
 }
-li{
-   text-decoration: none;
-   list-style: none;
-    }
-body{
-    font-family: "Arial MT";
-    max-width: 1200px;
-    width: 100%;
-}  
-.header{    
-    color: #ffffff;
-    background: #000000; 
-    width: 100%;    
-} 
-.info,
-.care,
-.number,
-.select,
-.account,
-.search{
-    display: inline-block;
-    font-size: 11px;
+
+li {
+  text-decoration: none;
+  list-style: none;
 }
-.number{
+
+body {
+  font-family: "Arial MT";
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-inner {
+    width: 1200px;
+    display: flex;
+}
+
+.flex {
+    display: flex;
+}
+
+.vertical-center {
+    align-items: center;
+}
+
+.horizontal-center {
+    justify-content: center;
+}
+
+/* Header */
+
+.header {
+  font-size: 11px;
+  color: #ffffff;
+  min-height: 30px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.black {
+    background-color: #000000;
+}
+
+.header .info {
+    display: inline-flex;
+    align-items: flex-end;
+}
+
+.header .number {
     font-size: 12px;
-    padding-right: 2px;
-} 
-.care{
-    padding-top: 11px;
-    padding-bottom: 11px;
+}
+
+.header .links {
+    display: flex;
+}
+
+.header .select,
+.header .account,
+.header .search {
+    height: 30px;
+    border-left: 1px solid #444;
+    padding: 0 15px;
+}
+
+.header .account .icon {
+    margin-right: 10px;
+}
+
+.header .search {
+    padding: 0 10px;
+    border-right: 1px solid #444;
+}
+
+
+/* Logo */
+
+.top-menu{
+    min-height: 105px;   
+  }
+
+/* Crazy   */
+
+.crazy{
+    background-color: #f6f3ec;
+    width: 100%;
+    border-bottom: 50px solid #f6f3ec;
+    height: 440px;
+}
+
+.lady{
+    float: right;
+    min-width: 440px;    
+}  
+
+/* DOT */
+
+.dot{
     
-} 
-   
-.info{
-    margin-left: 9.75%;
 }
 
-.select {
-    margin-left: 200px;
-    border-left: 1px solid #444444;
-    padding-left: 15px;
-    height: auto;
+.dot p{
+    color: #867a76;
+    border: 2px solid #867a76;
+    width: 10px;
+    border
 }
 
-.logo{
- display: flex;  
- justify-content: flex-start; 
- width: 100%;
- padding-left: 9.5%;
-}
 
-.graficlogo{
- box-sizing: border-box;
- max-width: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+    .header,
+    .haeder .info {
+        display: block;
+    }
+
+    .header .info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+    }
+
+    .header .info {
+        color: grey;
+        background-color: #fff;
+    }
+
+    .crazy{
+        display: none;
+    }
 }
