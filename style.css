@@ -85,6 +85,11 @@ body {
     border-right: 1px solid #444;
 }
 
+.header select {
+    color: #ffffff;
+    background: #000000;
+    border: 0;
+}
 
 /* Logo */
 
@@ -97,32 +102,89 @@ body {
 .crazy{
     background-color: #f6f3ec;
     width: 100%;
-    border-bottom: 50px solid #f6f3ec;
     height: 440px;
+    border-bottom: 75px solid white
 }
 
 .lady{
     float: right;
-    min-width: 440px;    
+    min-width: 440px;      
 }  
 
-/* DOT */
+/* grey */
 
-.dot{
+.grey-line{
+    justify-content: space-between;
+    width: 100%;
+}
+.grey{
+    background: #ededed;
+    min-height: 55px;    
+    width: 100%;
+    color: #6b6b6b;
     
 }
 
-.dot p{
-    color: #867a76;
-    border: 2px solid #867a76;
-    width: 10px;
-    border
+.stay-updated-email{    
+    display: flex;
 }
 
+.stay-updated{
+    margin-right: 10px; 
+    margin-top: 4px;    
+}
 
+.stay-updated-email input[type="text"]{    
+    background: white;
+    color: #9f9f9f;  
+    font-style: italic;      
+}
 
+.links{
+    display: flex;
+}
 
+.stay-updated-email input[type="submit"]{
+    background: #fd926d url(IMG/plus.png) no-repeat 50%;
+    border: 0px;
+    width: 28px;
+    height: 28px;
+}
 
+.facebook,
+.p-icon{
+    background-color: #f7f7f7;
+    
+}
+
+.facebook{    
+    padding: 18px 23px 19px 23px;
+    margin-left: 15px;
+}
+.p-icon{
+    padding: 16px 17px 18px 16px;
+}
+.twitter{
+    padding: 19px 17px;
+}
+
+.img-menu{
+    margin-top: 40px;
+}
+
+.img-menu-left{
+    margin-right: 4px;
+}
+
+.img-menu-right-bottom-left{
+    margin-top:-2px;
+}
+
+}
+.man-bottom{
+    margin-top: -3px;
+    padding-top: -10px;
+}
 
 
 
