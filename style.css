@@ -25,7 +25,7 @@ body {
 }
 
 .container-inner {
-    width: 1200px;
+    width: 970px;
     display: flex;
 }
 
@@ -173,24 +173,34 @@ body {
 }
 
 .img-menu-left{
-    margin-right: 4px;
+    margin-right: 2px;
 }
 
 .img-menu-right-bottom-left{
-    margin-top:-2px;
+    margin-top: 2px;
+    float: left;
 }
 
+.img-menu-right-bottom-right{
+    float: right;
+    margin-top: 2px;
+    margin-bottom: 51px;
 }
-.man-bottom{
-    margin-top: -3px;
-    padding-top: -10px;
+
+.img-menu-right-top img{
+   position: absolute;
 }
 
+.what-is-hot{
+    background: #fd926d;
+    padding: 19px 19px 15px 19px;
+    color: #ffffff; 
+}
 
-
-
-
-
+.designers-featured-latest{
+    color: #555555;
+    padding: 19px 19px 15px 19px;;
+}
 
 
 
