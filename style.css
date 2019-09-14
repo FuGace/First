@@ -27,6 +27,7 @@ body {
 .container-inner {
     width: 970px;
     display: flex;
+    max-width: 970px;
 }
 
 .flex {
@@ -60,7 +61,8 @@ body {
     align-items: flex-end;
 }
 
-.header .number {
+.header .number,
+.header .care {
     font-size: 12px;
 }
 
@@ -71,9 +73,9 @@ body {
 .header .select,
 .header .account,
 .header .search {
-    height: 30px;
+    padding: 6px 15px; 
     border-left: 1px solid #444;
-    padding: 0 15px;
+    
 }
 
 .header .account .icon {
@@ -91,30 +93,44 @@ body {
     border: 0;
 }
 
+.search img{
+    width: 15px;
+}
+
+.icon{
+    width: 14px;
+}
 /* Logo */
 
 
 /* Crazy   */
 
-
+.crazy{
+    background-color: #f6f3ec;
+    background-image: url(IMG/Layer_33.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 440px;
 }
 
-/* grey */
 
-.grey-line{
+/* gray */
+
+.gray-line{
+    display: flex;
     justify-content: space-between;
-    width: 100%;
 }
-.grey{
+
+.gray{
     background: #ededed;
-    min-height: 55px;    
+    height: 55px;    
     width: 100%;
     color: #6b6b6b;
     
 }
 
 .stay-updated-email{    
-    display: flex;
+    display: flex;    
 }
 
 .stay-updated{
@@ -128,15 +144,27 @@ body {
     font-style: italic;      
 }
 
-.links{
-    display: flex;
-}
-
 .stay-updated-email input[type="submit"]{
     background: #fd926d url(IMG/plus.png) no-repeat 50%;
     border: 0px;
     width: 28px;
     height: 28px;
+}
+
+.find-us > a > img {
+    height: 21px;
+}
+
+.find-us > a {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.find-us__title {
+    margin-right: 15px;
 }
 
 .facebook,
@@ -145,16 +173,7 @@ body {
     
 }
 
-.facebook{    
-    padding: 18px 23px 19px 23px;
-    margin-left: 15px;
-}
-.p-icon{
-    padding: 16px 17px 18px 16px;
-}
-.twitter{
-    padding: 19px 17px;
-}
+/* IMG */
 
 .img-menu{
     margin-top: 40px;
@@ -173,10 +192,6 @@ body {
     float: right;
     margin-top: 2px;
     margin-bottom: 51px;
-}
-
-.img-menu-right-top img{
-   position: absolute;
 }
 
 .what-is-hot{
@@ -211,6 +226,11 @@ body {
     line-height: 18px;
 }
 
+.footer_menu{
+    display: inline-flex; 
+    color: #8d8d8d; 
+    height: 11px;
+}
 
 
 
@@ -226,25 +246,86 @@ body {
 
 
 @media screen and (max-width: 640px) {
+
+    *{
+        font-size: 30px;
+    }
     .header,
-    .haeder .info {
+    .haeder .info,
+    .stay-updated-email,
+    .find {
         display: block;
     }
 
     .header .info {
         width: 100%;
-        display: flex;
         align-items: center;
         justify-content: center;
-        height: 30px;
-    }
-
-    .header .info {
+        padding: 37px 0 37px 0;
         color: grey;
-        background-color: #fff;
+        background-color: #fff;        
+
     }
 
-    .crazy{
+    .header .number,
+    .header .care{
+        font-size: 30px;
+    }
+
+    .links{
+        height: 96px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .search img{
+        width: 30px;
+        height: 33px;
+    }
+
+    .icon{
+        width: 40px;
+        padding-left: 50px;
+        padding-right: 0px;
+    }
+
+    .crazy,
+    .img-menu,
+    .designers-featured-latest, 
+    .arrow,
+    .goods1,
+    .goods4,
+    .shops,
+    .favourite_brands,
+    .about,
+    .text_info,
+    .pay,
+    .footer_info,
+    .footer_menu{
         display: none;
+    }   
+
+    .header .select,
+    .header .search{
+        border: 0;
+        padding: 0 30px;
+    }
+    .header .account{
+        border-right: 1px solid #444;
+        padding: 29px 0;
+        padding-right: 30px;
+    }
+
+    .copyright{
+        position: absolute;
+        right: 30px;
+    }
+  
+    .goods{
+        justify-content: space-around;
+    }
+
+    .gray{
+        display: flex;
+        
     }
 }
