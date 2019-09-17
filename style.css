@@ -93,6 +93,11 @@ body {
     border: 0;
 }
 
+.select :active, 
+.select :hover {
+    outline: none
+}
+
 .search img{
     width: 15px;
 }
@@ -207,19 +212,19 @@ body {
 
 /* Footer */
 
-.footer{
+.footer {
     justify-content: space-between;
     margin-top: 35px;
     margin-bottom: 35px;
 }
-.footer h1{
+.footer h5 {
     color: #544f4d;
     font-family: "Arial - Bold MT";
     font-size: 16px;
     line-height: 40px;
 }
 
-.footer p{
+.footer p {
     opacity: 0.7;
     color: #544f4d;
     font-size: 12px;
@@ -263,8 +268,7 @@ body {
         justify-content: center;
         padding: 37px 0 37px 0;
         color: grey;
-        background-color: #fff;        
-
+        background-color: #fff;             
     }
 
     .header .number,
@@ -273,13 +277,22 @@ body {
     }
 
     .links{
-        height: 96px;
         align-items: center;
         justify-content: space-between;
     }
     .search img{
-        width: 30px;
-        height: 33px;
+        width: 33px;        
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+    }
+
+    .logo img {
+        width: 350px;
     }
 
     .icon{
@@ -311,8 +324,9 @@ body {
     }
     .header .account{
         border-right: 1px solid #444;
-        padding: 29px 0;
-        padding-right: 30px;
+        padding: 29px 30px 29px 0;
+        height: 96px;
+        
     }
 
     .copyright{
