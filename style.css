@@ -172,13 +172,22 @@ body {
     height: 440px;
 }
 
-.crazy-layer {
-    background-image: url(IMG/Crazy_lady.png);
+.slider { 
+    position: relative;
     height: 100%;
+}
+
+.crazy_lady {
+    background-image: url(IMG/Crazy_lady.png);
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
-    position: relative;
+}
+
+.slider img {
+    position: absolute;
+    height: 440px;
+    right: 0;
 }
 
 .button-shop-now {
@@ -195,6 +204,34 @@ body {
     left: 150px;
 }
 
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    color: #ededed;
+    background-color: #ffffff;
+    padding: 50px 10px;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #fd926d;
+}
+
+
 /* Dot */
 
 .dot {
@@ -203,7 +240,31 @@ body {
     margin: 20px 8px;
     font-size: 40px; 
     text-decoration: none;
-    user-select: none;   
+    user-select: none;  
+    cursor: pointer; 
+    transition: color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    color: #fd926d;
+}
+
+.fade {
+    -webkit-animation-name:fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name:fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from{opacity: 0.4}
+    to{opacity: 1}
+}
+
+@keyframes fade {
+    from{opacity: 0.4}
+    to{opacity: 1}
 }
 
 /* gray */

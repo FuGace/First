@@ -1,24 +1,31 @@
-document.getElementById('money').onmouseover = function(event) {
-    var target = event.target;
-    if (target.className == 'menu-item') {
-        var s = target.getElementsByClassName('submenu')
-        closeMenu();
-        s[0].style.display='block';
-    }
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
 }
 
-document.onmouseover=function(event){
-    var target = event.taget;
-    console.log(event.target);
-    if (target.className !='menu-item' && target.className!='submenu'){
-       closeMenu(); 
-    }
+function currentSlide(n) {
+    showSlides(slideIndex = n);
 }
 
-function closeMenu() {
-    var menu = document.getElementById('money');
-    var subm = document.getElementsByClassName('submenu');
-    for (var i=0; i <subm.length; i++){
-        subm[i].style.display="none";
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("slider");
+    var dots = document.getElementsByClassName("dot");
+
+    if (n >slides.length) {
+        slideIndex = 1
     }
+    if (n < 1){
+        slideIndex=slides.length
+    }
+    for (i = 0; i <slides.length ; i++){
+        slides[i].style.display= "none"
+    }
+    for (i = 0; i < dots.length; i++){
+        dots[i].className= dots[i].className.replace("active","")
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className+= " active"
 }
