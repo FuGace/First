@@ -162,7 +162,7 @@ body {
 }
 
 .hamburger_icon {
-    margin-right: 17px;
+    display: none;
 }
 
 /* Crazy   */
@@ -833,6 +833,36 @@ body {
 
     .menu_optionally{
         display: flex;
+        position: relative;
+    }
+
+    .hamburger_icon {
+        display: block;
+        height: 32px;
+        width: 32px;
+        margin-right: 17px;              
+    }
+
+    .menu_clearfix {
+        position: absolute;
+        background-color: #fd926d;
+        right: 0;
+        top: 45px;
+        z-index: 1;
+        display: none;
+    }
+
+    .menu_clearfix li {
+        padding: 10px;
+        border-bottom: 1px solid #dd6b44;
+    }
+
+    .menu_clearfix li a {
+        color: #ffffff;
+        font-family: "Arial MT";
+        font-size: 18px;
+        text-decoration: none;
+       
     }
 
     .button-shop-now {
@@ -860,7 +890,8 @@ body {
     }
 
     .header,
-    .haeder .info{
+    .haeder .info,
+    .hamburger_icon {
         display: block;
     }
     
@@ -947,10 +978,12 @@ body {
         font-size: 30px;
     }
 
-    .menu_optionally img {
-        width: 30px;
-        height: 30px;
+    .menu_optionally .hamburger_icon {        
+        width: 32px;
+        height: 32px;
+        margin-right: 17px;
     }
+    
 
     /* STAY UPDATE */
 
@@ -1087,9 +1120,11 @@ body {
         height: 108px;
     }
 
-    .footer_black .hamburger_icon img {
-        width: 30px;
+    .footer_black .hamburger_icon {        
+        width: 32px;
+        height: 32px;
         margin-left: 32px;
+        margin-right: 17px;
     }
 
     .copyright{
