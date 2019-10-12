@@ -1,3 +1,3 @@
 ### Заголовок
 
-[Ссылка](www.google.com)
+[Ссылка](https://www.google.com)
