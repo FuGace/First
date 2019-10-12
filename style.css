@@ -831,7 +831,7 @@ body {
         display: none;
     }
 
-    .menu_optionally{
+    .menu_optionally {
         display: flex;
         position: relative;
     }
