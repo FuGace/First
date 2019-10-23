@@ -857,6 +857,11 @@ body {
         margin-right: 17px;              
     }
 
+    .menu-optionally__icon svg {
+        width: 30px;
+        height:30px;
+    }
+
     .menu-optionally__clearfix {
         position: absolute;
         background-color: #fd926d;
@@ -1146,12 +1151,16 @@ body {
         height: 108px;
     }
 
-
     .conteiner__footer__black .hamburger_icon {        
         width: 32px;
         height: 32px;
         margin-left: 32px;
         margin-right: 17px;
+    }
+
+    .conteiner__footer__black .hamburger_icon svg {
+        width: 30px;
+        height: 30px;
     }
 
     .copyright {
