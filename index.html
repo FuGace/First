@@ -8,233 +8,233 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container black">
-            <div class="container-inner">
-                <div class="header flex vertical-center between">
-                    <div class="info">
-                        <div class="care vertical-center">CUSTOM CARE:&nbsp</div>
-                        <div class="number">888-23-4567</div>
-                    </div>
-                    <div class="flex info-account">
-                      <div class="select flex vertical-center">
-                        <select>
-                        <option>&#36 US</option>
-                        <option>&#8364 EUR</option>
-                        <option>&#8381 RU</option>
-                        </select>
-                      </div>
-                      <div class="account flex vertical-center">
-                        <img class="icon" src="IMG/User_big.png" alt="icon" />MY ACCOUNT
-                      </div>
-                     <div class="search flex vertical-center">
-                        <a href="#"><img src="IMG/Shape_1.png" alt="search"/></a>
-                     </div>
-                    </div>
-                </div>
-            </div>
+    <div class="container container_black">
+      <div class="container__inner conteiner__inner__header container__inner_between">        
+        <div class="care">
+          <div class="care__text">CUSTOM CARE:&nbsp</div>
+          <div class="care__number">888-23-4567</div>
+        </div>
+        <div class="header__menu">
+          <div class="header__menu__select">
+            <select>
+              <option>&#36 US</option>
+              <option>&#8364 EUR</option>
+              <option>&#8381 RU</option>
+            </select>
+          </div>
+          <div class="header__menu__account">
+            <img class="header__menu__account__img" src="IMG/User_big.png" alt="icon" >
+            <p>MY ACCOUNT</p>
+          </div>
+          <div class="header__menu__search">
+            <a href="#"><img src="IMG/Shape_1.png" alt="search"/></a>
+          </div>
+        </div>                
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container__inner container__inner__graficlogo container__inner_between">
+        <div>
+          <a href="#">
+            <img class="container__inner__graficlogo_img" src="IMG/logo.png" alt="logo"></a>
+        </div>
+        <div class="border__cash">
+          <div class="border__cash__top hide-640px">
+            <p class="border__cash__top__cart">Your cart                                              &#9660</p>        
+          </div>
+            <div class="border__cash__bottom">
+              <div class="border__cash__bottom__basket">
+                <svg viewBox="0 0 51 49">
+                  <image xlink:href="data:image/png;base64,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" transform="matrix(1,0,0,1,0,0)" >
+                  </image>
+                </svg>
+              </div>
+              <div class="border__cash__bottom__amount">
+                <p>0 ITEMS | &#36 0</p>
+              </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="container">
-          <div class="container-inner vertical-center logo between">
-            <div class="graficlogo_block">
-              <a href="#">
-                <img class="graficlogo" src="IMG/logo.png" alt="logo"></a>
-            </div>
-            <div class="border_block">
-              <div class="border_cash_top hide_640">
-                <p class="your_cart">Your cart                                              &#9660</p>        
-              </div>
-              <div class="border_cash_bottom between">
-                <div class="basket">
-                  <svg viewBox="0 0 51 49">
-                    <image xlink:href="data:image/png;base64,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" transform="matrix(1,0,0,1,0,0)" >
-                    </image>
-                  </svg>
-                </div>
-                <div class="amount">
-                  <p>0 ITEMS | &#36 0</p>
-                </div>
-            </div>
+      <div class="container__inner container__inner_between menu-optionally">
+        <p class="menu-optionally__text">MENU</p>
+        <div class="menu-optionally__icon" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <path fill="#ffffff" d="m4,10l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2zm24,4l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2zm0,8l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2z"/>
+            </g>
+          </svg>
+        </div>
+        <ul class="menu-optionally__clearfix">
+          <li>
+            <a href="#">Jaket</a>
+          </li>
+          <li>
+            <a href="#">Skirt</a>
+          </li>
+          <li>
+            <a href="#">Shorts</a>
+          </li>
+          <li>
+            <a href="#">Bag</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container container__slider hide-640px">
+      <div class="container__inner container__inner_fade container__inner__slider__first">
+        <img class="container__inner__slider__crazy-lady" src="IMG/Crazy_lady.png">
+        <a href="#" class="container__inner__button-shop-now">SHOP NOW &nbsp &nbsp &#9658</a>
+      </div>
+      <div class="container__inner container__inner_fade container__inner__slider__first">
+        <img src="IMG/jacket.png">
+        <a href="#" class="container__inner__button-shop-now">SHOP NOW &nbsp &nbsp &#9658</a>
+      </div>
+      <div class="container__inner container__inner_fade container__inner__slider__first">
+        <img src="IMG/skirt.jpg">
+        <a href="#" class="container__inner__button-shop-now">SHOP NOW &nbsp &nbsp &#9658</a>
+      </div>
+      <div class="container__inner container__inner_fade container__inner__slider__first">
+        <img src="IMG/shorts.jpg">
+        <a href="#" class="container__inner__button-shop-now">SHOP NOW &nbsp &nbsp &#9658</a>
+      </div>
+      <div class="container__inner container__inner_fade container__inner__slider__first">
+        <img src="IMG/bag_goods.jpg">
+        <a href="#" class="container__inner__button-shop-now">SHOP NOW &nbsp &nbsp &#9658</a>
+      </div>
+      <a class="container__inner__slider__first__prev" onclick="plusSlides(-1)">&#10094</a>
+      <a class="container__inner__slider__first__next" onclick="plusSlides(1)">&#10095</a>
+    </div>
+    <div class="container hide-640px">
+      <a class="container__dot" onclick="currentSlide(1)"> &bull; </a>
+      <a class="container__dot" onclick="currentSlide(2)"> &bull; </a>
+      <a class="container__dot" onclick="currentSlide(3)"> &bull; </a>
+      <a class="container__dot" onclick="currentSlide(4)"> &bull; </a>
+      <a class="container__dot" onclick="currentSlide(5)"> &bull; </a>
+    </div>
+    <div class="container container_gray">
+      <div class="container__inner container__inner_between container__inner__stay__email">
+        <div class="container__inner__stay-updated">
+          <div class="container__inner__stay-updated__main hide-640px">Stay update</div>
+          <input type="text" placeholder="Your email address">
+          <input type="submit" value="">
+        </div>
+        <div class="container__inner__find-us">
+          <span class="container__inner__find-us_text">Find us here </span>
+          <a class="container__inner__find-us_facebook" href="https://ru-ru.facebook.com/" target="_blank">
+            <img src="IMG/Facebook.png" alt="Facebook"/>
+          </a>
+          <a class="container__inner__find-us_twitter" href="https://twitter.com/?lang=ru" target="_blank">
+            <img src="IMG/Twitter.png" alt="search"/>
+          </a>
+          <a class="container__inner__find-us_p-icon" href="https://www.pinterest.ru/" target="_blank">
+            <img src="IMG/P-icon.png" alt="search"/>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container hide-640px">
+      <div class="container__inner container__inner__img-menu">
+        <div class="container__inner__img-menu__left">
+          <img class="container__inner__img-menu__left_layer-1" src="IMG/best.png">
+          <img class="container__inner__img-menu__left_layer-2" src="IMG/outfits.png">
+          <img class="container__inner__img-menu__left_layer-3" src="IMG/Ellipse_2.png">
+          <img class="container__inner__img-menu__left_layer-4" src="IMG/&.png">
+          <img class="container__inner__img-menu__left_layer-5" src="IMG/looks.png">
+          <img class="container__inner__img-menu__left_layer-6" src="IMG/Rectangle_13.png">
+          <img class="container__inner__img-menu__left_layer-7" src="IMG/Rectangle_13.png">
+        </div>
+        <div class="container__inner__img-menu__right">
+          <div class="container__inner__img-menu__right-top">
+            <img class="container__inner__img-menu__right-top_layer_1" src="IMG/Ellipse_3.png">
+            <img class="container__inner__img-menu__right-top_layer_2" src="IMG/Ellipse_3_copy.png">
+            <img class="container__inner__img-menu__right-top_layer_3" src="IMG/Summer.png">
+            <img class="container__inner__img-menu__right-top_layer_4" src="IMG/party.png">
+            <img class="container__inner__img-menu__right-top_layer_5" src="IMG/collection.png">
           </div>
-          </div>
-    </div>
-    <div class="container">
-      <div class="container-inner vertical-center between menu_optionally">
-        <p class="hamburger_text_menu">MENU</p>
-          <div class="hamburger_icon" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg">
-              <g>
-                <path fill="#ffffff" d="m4,10l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2zm24,4l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2zm0,8l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2z"/>
-              </g>
-            </svg>
-          </div>
-          <ul class="menu_clearfix">
-            <li>
-              <a href="#">Jaket</a>
-            </li>
-            <li>
-              <a href="#">Skirt</a>
-            </li>
-            <li>
-              <a href="#">Shorts</a>
-            </li>
-            <li>
-              <a href="#">Bag</a>
-            </li>
-          </ul>
-        </div>
-    </div>
-    <div class="container crazy hide_640">
-        <div class="container-inner fade slider crazy_lady">
-          <img class="crazy_lady" src="IMG/Crazy_lady.png">
-          <a href="#" class="button-shop-now">SHOP NOW &nbsp &nbsp &#9658</a>
-        </div>
-        <div class="container-inner fade slider">
-          <img src="IMG/jacket.png">
-          <a href="#" class="button-shop-now">SHOP NOW &nbsp &nbsp &#9658</a>
-        </div>
-        <div class="container-inner fade slider">
-          <img src="IMG/skirt.jpg">
-          <a href="#" class="button-shop-now">SHOP NOW &nbsp &nbsp &#9658</a>
-        </div>
-        <div class="container-inner fade slider">
-          <img src="IMG/shorts.jpg">
-          <a href="#" class="button-shop-now">SHOP NOW &nbsp &nbsp &#9658</a>
-        </div>
-        <div class="container-inner fade slider">
-          <img src="IMG/bag_goods.jpg">
-          <a href="#" class="button-shop-now">SHOP NOW &nbsp &nbsp &#9658</a>
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-        <a class="next" onclick="plusSlides(1)">&#10095</a>
-    </div>
-    <div class="container hide_640">
-        <a class="dot" onclick="currentSlide(1)"> &bull; </a>
-        <a class="dot" onclick="currentSlide(2)"> &bull; </a>
-        <a class="dot" onclick="currentSlide(3)"> &bull; </a>
-        <a class="dot" onclick="currentSlide(4)"> &bull; </a>
-        <a class="dot" onclick="currentSlide(5)"> &bull; </a>
-    </div>
-    <div class="container gray">
-        <div class="container-inner vertical-center between flex stay-update-link">
-            <div class="stay-updated-email flex">
-              <div class="stay-updated hide_640">Stay update</div>
-              <input type="text" placeholder="Your email address">
-              <input type="submit" value="">
+          <div class="container__inner__img-menu__right-bottom">
+            <div class="container__inner__img-menu__right-bottom-left">
+              <img class="container__inner__img-menu__right-bottom-left_1" src="IMG/Rectangle_18.png">
+              <img class="container__inner__img-menu__right-bottom-left_2" src="IMG/best_sellers.png">
             </div>
-            <div class="find-us flex vertical-center flex">
-              <span class="find-us__title">Find us here </span>
-              <a class="facebook" href="https://ru-ru.facebook.com/" target="_blank">
-                <img src="IMG/Facebook.png" alt="Facebook"/>
-              </a>
-              <a class="twitter" href="https://twitter.com/?lang=ru" target="_blank">
-                <img src="IMG/Twitter.png" alt="search"/>
-              </a>
-              <a class="p-icon" href="https://www.pinterest.ru/" target="_blank">
-                <img src="IMG/P-icon.png" alt="search"/>
-              </a>
-            </div>
-        </div>
-    </div>
-    <div class="container hide_640">
-        <div class="container-inner img-menu">
-              <div class="img-menu-left">
-                <img class="img-menu-left_layer_1" src="IMG/best.png">
-                <img class="img-menu-left_layer_2" src="IMG/outfits.png">
-                <img class="img-menu-left_layer_3" src="IMG/Ellipse_2.png">
-                <img class="img-menu-left_layer_4" src="IMG/&.png">
-                <img class="img-menu-left_layer_5" src="IMG/looks.png">
-                <img class="img-menu-left_layer_6" src="IMG/Rectangle_13.png">
-                <img class="img-menu-left_layer_7" src="IMG/Rectangle_13.png">
-              </div>
-              <div class="img-menu-right">
-                <div class="img-menu-right-top">
-                  <img class="img-menu-right-top_layer_1" src="IMG/Ellipse_3.png">
-                  <img class="img-menu-right-top_layer_2" src="IMG/Ellipse_3_copy.png">
-                  <img class="img-menu-right-top_layer_3" src="IMG/Summer.png">
-                  <img class="img-menu-right-top_layer_4" src="IMG/party.png">
-                  <img class="img-menu-right-top_layer_5" src="IMG/collection.png">
-                </div>
-                <div class="img-menu-right-bottom">
-                  <div class="img-menu-right-bottom-left">
-                    <img class="img-menu-right-bottom-left-1" src="IMG/Rectangle_18.png">
-                    <img class="img-menu-right-bottom-left-2" src="IMG/best_sellers.png">
-                  </div>
-                  <div class="img-menu-right-bottom-right">
-                    <img class="img-menu-right-bottom-right-1" src="IMG/fall_leather.png">
-                    <a href="#">
-                      <img class="img-menu-right-bottom-right-2" src="IMG/Rectangle_12.png">
-                      <img class="img-menu-right-bottom-right-3" src="IMG/shop_now.png">
-                      <img class="img-menu-right-bottom-right-4" src="IMG/pixel_iconz_r4_c19_copy_7.png">
-                    </a>
-                  </div>
-                </div>
-              </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="container-inner between">
-          <div class="flex container_640_what-is-hot">
-            <div class="what-is-hot designers-featured-latest">
-              <p>WHAT’S HOT?</p>
-              <img src="IMG/Rectangle_22_copy.png">
-            </div>
-            <div class="designers-featured-latest hide_640">DESIGNERS</div>
-            <div class="designers-featured-latest hide_640">FEATURED</div>
-            <div class="designers-featured-latest hide_640">LATEST</div>
-          </div>
-          <div class="flex vertical-center arrow hide_640">
-            <a class="prev_goods_slide" onclick="plusSlides(-1)">&#10094</a>
-            <a class="next_goods_slide" onclick="plusSlides(1)">&#10095</a>
-          </div>
-        </div>
-    </div>
-    <div class="container goods_container">
-          <div class="container-inner between space-around goods_container_inside">
-            <div class="goods">
-              <img src="IMG/Layer_8.png">
-              <p class="name-goods">MIMOSA LACE DRESS</p>
-              <p class="money">$76.95</p>
-              <a href="#" class="button-pay">ADD TO CART &nbsp &#10010</a>
-              <a href="#" class="shop-it">
-                <img src="IMG/bag.png">
-                <p class="shop-it-text">SHOP IT</p>
+            <div class="container__inner__img-menu__right-bottom-right">
+              <img class="container__inner__img-menu__right-bottom-right_1" src="IMG/fall_leather.png">
+                <a href="#">
+                  <img class="container__inner__img-menu__right-bottom-right_2" src="IMG/Rectangle_12.png">
+                  <img class="container__inner__img-menu__right-bottom-right_3" src="IMG/shop_now.png">
+                  <img class="container__inner__img-menu__right-bottom-right_4" src="IMG/pixel_iconz_r4_c19_copy_7.png">
                 </a>
             </div>
-            <div class="goods">
-              <img src="IMG/Layer_9.png">
-              <p class="name-goods">FEEL TANK</p>
-              <p class="money">$59.95</p>
-              <a href="#" class="button-pay">ADD TO CART &nbsp &#10010</a>
-              <a href="#" class="shop-it">
-                <img src="IMG/bag.png">
-                <p class="shop-it-text">SHOP IT</p>
-              </a>
-            </div>
-            <div class="goods hide_640">
-              <img src="IMG/Layer_10.png">
-              <p class="name-goods">HOT SHORTS</p>
-              <p class="money">$35.95</p>
-              <a href="#" class="button-pay">ADD TO CART &nbsp &#10010</a>
-              <a href="#" class="shop-it">
-                <img src="IMG/bag.png">
-                <p class="shop-it-text">SHOP IT</p>
-              </a>
-            </div>
-            <div class="goods hide_768">
-              <img src="IMG/Layer_11.png">
-              <p class="name-goods">PETROL SWEATER</p>
-              <p class="money">$21.50</p>
-              <a href="#" class="button-pay">ADD TO CART &nbsp &#10010</a>
-              <a href="#" class="shop-it">
-                <img src="IMG/bag.png">
-                <p class="shop-it-text">SHOP IT</p>
-              </a>
-            </div> 
           </div>
-          <button type="button" class="load-more">LOAD MORE</button>
         </div>
+      </div>
+    </div>
     <div class="container">
-        <div class="container-inner horizontal-center">
+      <div class="container__inner container__inner_between">
+        <div class="container__inner__menu-designers">
+          <div class="container__inner__menu-designers__whats-is-hot container__inner__menu-designers__links_text">
+            <p>WHAT’S HOT?</p>
+            <img src="IMG/Rectangle_22_copy.png">
+          </div>
+          <div class="container__inner__menu-designers__links_text hide-640px">DESIGNERS</div>
+          <div class="container__inner__menu-designers__links_text hide-640px">FEATURED</div>
+          <div class="container__inner__menu-designers__links_text hide-640px">LATEST</div>
+        </div>
+        <div class="container__inner__menu-designers__arrow hide-640px">
+          <a class="container__inner__menu-designers__arrow__prev" onclick="plusSlides(-1)">&#10094</a>
+          <a class="container__inner__menu-designers__arrow__next" onclick="plusSlides(1)">&#10095</a>
+        </div>
+      </div>
+    </div>
+    <div class="container goods_container">
+      <div class="container__inner container__inner_between goods__container__inside">
+        <div class="goods">
+          <img src="IMG/Layer_8.png">
+          <p class="goods_name">MIMOSA LACE DRESS</p>
+          <p class="goods_money">$76.95</p>
+          <a href="#" class="goods__button-pay">ADD TO CART &nbsp &#10010</a>
+          <a href="#" class="goods__shop-it_hover">
+            <img src="IMG/bag.png">
+            <p class="goods__shop-it_text">SHOP IT</p>
+          </a>
+        </div>
+        <div class="goods">
+          <img src="IMG/Layer_9.png">
+          <p class="goods_name">FEEL TANK</p>
+          <p class="goods_money">$59.95</p>
+          <a href="#" class="goods__button-pay">ADD TO CART &nbsp &#10010</a>
+          <a href="#" class="goods__shop-it_hover">
+            <img src="IMG/bag.png">
+            <p class="goods__shop-it_text">SHOP IT</p>
+          </a>
+        </div>
+        <div class="goods hide-640px">
+          <img src="IMG/Layer_10.png">
+          <p class="goods_name">HOT SHORTS</p>
+          <p class="goods_money">$35.95</p>
+          <a href="#" class="goods__button-pay">ADD TO CART &nbsp &#10010</a>
+          <a href="#" class="goods__shop-it_hover">
+          <img src="IMG/bag.png">
+            <p class="goods__shop-it_text">SHOP IT</p>
+          </a>
+        </div>
+        <div class="goods hide-768px">
+          <img src="IMG/Layer_11.png">
+          <p class="goods_name">PETROL SWEATER</p>
+          <p class="goods_money">$21.50</p>
+          <a href="#" class="goods__button-pay">ADD TO CART &nbsp &#10010</a>
+          <a href="#" class="goods__shop-it_hover">
+            <img src="IMG/bag.png">
+            <p class="goods__shop-it_text">SHOP IT</p>
+          </a>
+        </div> 
+      </div>
+      <button type="button" class="load-more">LOAD MORE</button>
+    </div>
+    <div class="container">
+        <div class="container__inner">
           <div class="clearance-wraper">
           <div class="clearance">
             <img class="Layer_pictures_1" src="IMG/Shape_5_copy.png">
@@ -246,120 +246,116 @@
           </div>
         </div>
     </div>
-    <div class="container goods_container_bottom">
-        <div class="container-inner between space-around goods_container_inside_bottom">
-          <div class="goods">
-            <img src="IMG/Layer_17.png">
-            <p class="name-goods">NADIA DRESS</p>
-            <p class="money">$64.95</p>
-            <a href="#" class="button-pay">ADD TO CART &nbsp &#10010</a>
-            <a href="#" class="shop-it">
-              <img src="IMG/bag.png">
-              <p class="shop-it-text">SHOP IT</p>
-            </a>
-          </div>
-          <div class="goods">
-            <img src="IMG/Layer_18.png">
-            <p class="name-goods">SOFI BLOUSE</p>
-            <p class="money">$26.95</p>
-            <a href="#" class="button-pay">ADD TO CART &nbsp &#10010</a>
-            <a href="#" class="shop-it">
-              <img src="IMG/bag.png">
-              <p class="shop-it-text">SHOP IT</p>
-            </a>
-          </div>
-          <div class="goods hide_640">
-            <img src="IMG/Layer_19.png">
-            <p class="name-goods">GOODING SHORTS</p>
-            <p class="money">$79.95</p>
-            <a href="#" class="button-pay">ADD TO CART &nbsp &#10010</a>
-            <a href="#" class="shop-it">
-              <img src="IMG/bag.png">
-              <p class="shop-it-text">SHOP IT</p>
-              </a>
-         </div>
-          <div class="goods hide_768">
-            <img src="IMG/Layer_20.png">
-            <p class="name-goods">MIMOSA LACE DRESS</p>
-            <p class="money">$76</p>
-            <a href="#" class="button-pay">ADD TO CART &nbsp &#10010</a>
-            <a href="#" class="shop-it">
-              <img src="IMG/bag.png">
-              <p class="shop-it-text">SHOP IT</p>
-              </a>
-          </div>
+    <div class="container goods__container__bottom">
+      <div class="container__inner container__inner_between goods__container__inside__bottom">
+        <div class="goods">
+          <img src="IMG/Layer_17.png">
+          <p class="goods_name">NADIA DRESS</p>
+          <p class="goods_money">$64.95</p>
+          <a href="#" class="goods__button-pay">ADD TO CART &nbsp &#10010</a>
+          <a href="#" class="goods__shop-it_hover">
+            <img src="IMG/bag.png">
+            <p class="goods__shop-it_text">SHOP IT</p>
+          </a>
         </div>
-        <button type="button" class="load-more">LOAD MORE</button>
+        <div class="goods">
+          <img src="IMG/Layer_18.png">
+          <p class="goods_name">SOFI BLOUSE</p>
+          <p class="goods_money">$26.95</p>
+          <a href="#" class="goods__button-pay">ADD TO CART &nbsp &#10010</a>
+          <a href="#" class="goods__shop-it_hover">
+            <img src="IMG/bag.png">
+            <p class="goods__shop-it_text">SHOP IT</p>
+          </a>
+        </div>
+        <div class="goods hide-640px">
+          <img src="IMG/Layer_19.png">
+          <p class="goods_name">GOODING SHORTS</p>
+          <p class="goods_money">$79.95</p>
+          <a href="#" class="goods__button-pay">ADD TO CART &nbsp &#10010</a>
+          <a href="#" class="goods__shop-it_hover">
+            <img src="IMG/bag.png">
+            <p class="goods__shop-it_text">SHOP IT</p>
+          </a>
+        </div>
+        <div class="goods hide-768px">
+          <img src="IMG/Layer_20.png">
+          <p class="goods_name">MIMOSA LACE DRESS</p>
+          <p class="goods_money">$76</p>
+          <a href="#" class="goods__button-pay">ADD TO CART &nbsp &#10010</a>
+          <a href="#" class="goods__shop-it_hover">
+            <img src="IMG/bag.png">
+            <p class="goods__shop-it_text">SHOP IT</p>
+          </a>
+        </div>
       </div>
-    <div class="container favourite_brands_main hide_640">
-        <h3 class="favourite_brands_text">FAVOURITE BRANDS</h3>
-        <div class="container-inner between favourite_brands">
-          <a class="hide_640" href="https://www.addict.co.uk/" target="_blank"><img src="IMG/Layer_21.png"></a>
-          <a class="hide_640" href="https://www.abandonshipapparel.com/" target="_blank"><img src="IMG/Layer_22.png"></a>
-          <a class="hide_640" href="https://www.adidas.ru/" target="_blank"><img src="IMG/Layer_23.png"></a>
-          <a class="hide_640" href="https://www.boy-london.com/" target="_blank"><img src="IMG/Layer_24.png"></a>
-          <a class="hide_640" href="https://www.converse.com/country-language-selector" target="_blank"><img src="IMG/Layer_25.png"></a>
-          <a class="hide_640" href="https://www.calvinklein.ru/" target="_blank"><img src="IMG/Layer_26.png"></a>
-          <a class="hide_768" href="https://edwin-europe.com/" target="_blank"><img src="IMG/Layer_27.png"></a>
-          <a class="hide_768" href="https://www.grenson.com/uk/" target="_blank"><img src="IMG/Layer_28.png"></a>
-        </div>
+      <button type="button" class="load-more">LOAD MORE</button>
     </div>
-    <div class="container hide_640">
-      <div class="container-inner about">
-        <p>About LookShop</p>
+    <div class="container favourite-brands__main hide-640px">
+      <h3 class="favourite-brands_text">FAVOURITE BRANDS</h3>
+      <div class="container__inner container__inner_between favourite-brands">
+        <a class="hide-640px" href="https://www.addict.co.uk/" target="_blank"><img src="IMG/Layer_21.png"></a>
+        <a class="hide-640px" href="https://www.abandonshipapparel.com/" target="_blank"><img src="IMG/Layer_22.png"></a>
+        <a class="hide-640px" href="https://www.adidas.ru/" target="_blank"><img src="IMG/Layer_23.png"></a>
+        <a class="hide-640px" href="https://www.boy-london.com/" target="_blank"><img src="IMG/Layer_24.png"></a>
+        <a class="hide-640px" href="https://www.converse.com/country-language-selector" target="_blank"><img src="IMG/Layer_25.png"></a>
+        <a class="hide-640px" href="https://www.calvinklein.ru/" target="_blank"><img src="IMG/Layer_26.png"></a>
+        <a class="hide-640px" href="https://edwin-europe.com/" target="_blank"><img src="IMG/Layer_27.png"></a>
+        <a class="hide-640px" href="https://www.grenson.com/uk/" target="_blank"><img src="IMG/Layer_28.png"></a>
       </div>
     </div>
-    <div class="container hide_640">
-      <div class="container-inner text_info">
+    <div class="container hide-640px">
+      <div class="container__inner container__inner__about">
+        <h3>About LookShop</h3> 
         <p>This is Photoshop's version  of Lorem Ipsum.
-          Proin gravida nibh vel velit auctor aliquet. 
-          Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-          Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
-          Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
-          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.
-          Nullam ac urna eu felis dapibus condimentum sit amet a augue.</p>
+        Proin gravida nibh vel velit auctor aliquet. 
+        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+        Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+        Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.
+        Nullam ac urna eu felis dapibus condimentum sit amet a augue.</p>
        </div>
     </div>
-    <div class="container pay hide_640">
+    <div class="container conteiner__pay hide-640px">
       <p>We accept</p>
       <img src="IMG/Layer_29.png">
     </div>
-    <div class="container footer_info hide_640">
-      <div class="container-inner footer between">
+    <div class="container conteiner__footer hide-640px">
+      <div class="container__inner conteiner__footer_conteiner container__inner_between">
         <div>
           <h5>Customer Service</h5>
-          <a class="link-no-decoration" href="">Contact</a>
-          <a class="link-no-decoration" href="">FAQ</a>
-          <a class="link-no-decoration" href="">Terms of payment</a>
-          <a class="link-no-decoration" href="">Terms of sale</a>
-          <a class="link-no-decoration" href="">Delivery terms and conditions</a>
-          <a class="link-no-decoration" href="">Returns and Refunds</a>
+          <a href="">Contact</a>
+          <a href="">FAQ</a>
+          <a href="">Terms of payment</a>
+          <a href="">Terms of sale</a>
+          <a href="">Delivery terms and conditions</a>
+          <a href="">Returns and Refunds</a>
         </div>
         <div>
           <h5>Information</h5>
-          <a class="link-no-decoration" href="">Affiliate</a>
-          <a class="link-no-decoration" href="">Cookies</a>
-          <a class="link-no-decoration" href="">How to Shop</a>
-          <a class="link-no-decoration" href="">About Nelly</a>
-          <a class="link-no-decoration" href="">Investor relations</a>
+          <a href="">Affiliate</a>
+          <a href="">Cookies</a>
+          <a href="">How to Shop</a>
+          <a href="">About Nelly</a>
+          <a href="">Investor relations</a>
         </div>
         <div>
           <h5>Campaigns</h5>
-          <a class="link-no-decoration" href="">Evening dresses</a>
-          <a class="link-no-decoration" href="">Makeup</a>
-          <a class="link-no-decoration" href="">Fashion forward</a>
-          <a class="link-no-decoration" href="">training clothes</a>
-          <a class="link-no-decoration" href="">Special Occasion Dresses</a>
+          <a href="">Evening dresses</a>
+          <a href="">Makeup</a>
+          <a href="">Fashion forward</a>
+          <a href="">training clothes</a>
+          <a href="">Special Occasion Dresses</a>
         </div>
         <div>
           <h5>Stores</h5>
-          <a class="link-no-decoration" href="">Paris</a>
-          <a class="link-no-decoration" href="">New York</a>
-          <a class="link-no-decoration" href="">London</a>
-          <a class="link-no-decoration" href="">Madrid</a>
-          <a class="link-no-decoration" href="">Tokio</a>
+          <a href="">Paris</a>
+          <a href="">New York</a>
+          <a href="">London</a>
+          <a href="">Madrid</a>
+          <a href="">Tokio</a>
         </div>
-        <div class="links">
+        <div class="conteiner__footer_conteiner__network">
           <h5>Social</h5>
           <a href="https://twitter.com/?lang=ru" target="_blank"><img src="IMG/icon_1.png"></a>
           <a href="https://www.pinterest.ru/" target="_blank"><img src="IMG/icon_2.png"></a>
@@ -376,8 +372,8 @@
         </div>
       </div>
     </div>
-    <div class="container footer_black">
-      <div class="container-inner vertical-center between">
+    <div class="container container_black">
+      <div class="container__inner conteiner__footer__black container__inner_between">
         <a class="hamburger_icon">
           <svg xmlns="http://www.w3.org/2000/svg">
             <g>
@@ -385,7 +381,7 @@
             </g>
           </svg>
         </a>
-          <div class="footer_menu hide_640">
+          <div class="conteiner__footer__black_menu hide-640px">
             <div>
               <a class="link-no-decoration" href="">Privacy & Cookies</a>
             </div>
