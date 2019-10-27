@@ -1,4 +1,6 @@
-var slideIndex = 1;
+'use strikt'
+
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -10,9 +12,9 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("container__inner__slider__first");
-    var dots = document.getElementsByClassName("container__dot");
+    let i;
+    let slides = document.getElementsByClassName("container__inner__slider__first");
+    let dots = document.getElementsByClassName("container__dot");
 
     if (n >slides.length) {
         slideIndex = 1
