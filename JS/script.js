@@ -13,7 +13,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
     let i;
-    let slides = document.getElementsByClassName("container__inner__slider_first");
+    let slides = document.getElementsByClassName("container__inner__slider_crazy");
     let dots = document.getElementsByClassName("container__dot");
 
     if (n >slides.length) {
