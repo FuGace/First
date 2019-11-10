@@ -106,15 +106,15 @@
         <img src="IMG/bag_goods.jpg">
         <a href="#" class="container__inner__button-shop-now">SHOP NOW &nbsp &nbsp &#9658</a>
       </div>
-      <a class="container__inner__slider_crazy_prev" onclick="plusSlides(-1)">&#10094</a>
-      <a class="container__inner__slider_crazy_next" onclick="plusSlides(1)">&#10095</a>
+      <a class="container__inner__slider_crazy_prev" onclick="plusSlidesCrazy(-1)">&#10094</a>
+      <a class="container__inner__slider_crazy_next" onclick="plusSlidesCrazy(1)">&#10095</a>
     </div>
     <div class="container hide-640px">
-      <a class="container__dot" onclick="currentSlide(1)"> &bull; </a>
-      <a class="container__dot" onclick="currentSlide(2)"> &bull; </a>
-      <a class="container__dot" onclick="currentSlide(3)"> &bull; </a>
-      <a class="container__dot" onclick="currentSlide(4)"> &bull; </a>
-      <a class="container__dot" onclick="currentSlide(5)"> &bull; </a>
+      <a class="container__dot" onclick="currentSlideCrazy(1)"> &bull; </a>
+      <a class="container__dot" onclick="currentSlideCrazy(2)"> &bull; </a>
+      <a class="container__dot" onclick="currentSlideCrazy(3)"> &bull; </a>
+      <a class="container__dot" onclick="currentSlideCrazy(4)"> &bull; </a>
+      <a class="container__dot" onclick="currentSlideCrazy(5)"> &bull; </a>
     </div>
     <div class="container container_gray">
       <div class="container__inner container__inner_between container__inner__stay__email">
@@ -176,34 +176,34 @@
     <div class="container">
       <div class="container__inner container__inner_between">
         <div class="container__inner__menu-designers">
-          <div class="container__inner__menu-designers__whats-is-hot container__inner__menu-designers__links-text">
+          <div class="container__inner__menu-designers__whats-is-hot container__inner__menu-designers__links-text" onclick="currentSlideGoods(1)">
             <p>WHAT’S HOT?</p>
             <img src="IMG/Rectangle_22_copy.png">
           </div>
-          <div class="container__inner__menu-designers__links-text hide-640px">DESIGNERS</div>
-          <div class="container__inner__menu-designers__links-text hide-640px">FEATURED</div>
-          <div class="container__inner__menu-designers__links-text hide-640px">LATEST</div>
+          <div class="container__inner__menu-designers__links-text hide-640px" onclick="currentSlideGoods(2)">DESIGNERS</div>
+          <div class="container__inner__menu-designers__links-text hide-640px" onclick="currentSlideGoods(3)">FEATURED</div>
+          <div class="container__inner__menu-designers__links-text hide-640px" onclick="currentSlideGoods(4)">LATEST</div>
         </div>
         <div class="container__inner__menu-designers__arrow hide-640px">
-          <a class="container__inner__menu-designers__arrow__prev" onclick="plusSlides(-1)">&#10094</a>
-          <a class="container__inner__menu-designers__arrow__next" onclick="plusSlides(1)">&#10095</a>
+          <a class="container__inner__menu-designers__arrow__prev" onclick="plusSlidesGoods(-1)">&#10094</a>
+          <a class="container__inner__menu-designers__arrow__next" onclick="plusSlidesGoods(1)">&#10095</a>
         </div>
       </div>
     </div>
     <div class="container goods_container">
-      <div class="container__inner container__inner_between goods__container__inside">
+      <div class="container__inner container__inner_between goods__container__inside goods__container__inside_slider">
         <div class="goods">
-          <img src="IMG/Layer_8.png">
+          <img class="goods_img" src="IMG/Layer_8.png">
           <p class="goods_name">MIMOSA LACE DRESS</p>
           <p class="goods_money">$76.95</p>
           <a href="#" class="goods__button-pay">ADD TO CART &nbsp &#10010</a>
-          <a href="#" class="goods__shop-it_hover"> // вот тут идеально использован модификатор - block__element_modificator
+          <a href="#" class="goods__shop-it_hover">
             <img src="IMG/bag.png">
             <p class="goods__shop-it_text">SHOP IT</p>
           </a>
         </div>
         <div class="goods">
-          <img src="IMG/Layer_9.png">
+          <img class="goods_img" src="IMG/Layer_9.png">
           <p class="goods_name">FEEL TANK</p>
           <p class="goods_money">$59.95</p>
           <a href="#" class="goods__button-pay">ADD TO CART &nbsp &#10010</a>
@@ -213,7 +213,7 @@
           </a>
         </div>
         <div class="goods hide-640px">
-          <img src="IMG/Layer_10.png">
+          <img class="goods_img" src="IMG/Layer_10.png">
           <p class="goods_name">HOT SHORTS</p>
           <p class="goods_money">$35.95</p>
           <a href="#" class="goods__button-pay">ADD TO CART &nbsp &#10010</a>
@@ -223,9 +223,135 @@
           </a>
         </div>
         <div class="goods hide-768px">
-          <img src="IMG/Layer_11.png">
+          <img class="goods_img" src="IMG/Layer_11.png">
           <p class="goods_name">PETROL SWEATER</p>
           <p class="goods_money">$21.50</p>
+          <a href="#" class="goods__button-pay">ADD TO CART &nbsp &#10010</a>
+          <a href="#" class="goods__shop-it_hover">
+            <img src="IMG/bag.png">
+            <p class="goods__shop-it_text">SHOP IT</p>
+          </a>
+        </div>
+      </div>
+      <div class="container__inner container__inner_between goods__container__inside goods__container__inside_slider">
+        <div class="goods">
+          <img class="goods_img" src="IMG/Dino Arizona.jpg">
+          <p class="goods_name">DINO ARIZONA</p>
+          <p class="goods_money">$85.70</p>
+          <a href="#" class="goods__button-pay">ADD TO CART &nbsp &#10010</a>
+          <a href="#" class="goods__shop-it_hover">
+            <img src="IMG/bag.png">
+            <p class="goods__shop-it_text">SHOP IT</p>
+          </a>
+        </div>
+        <div class="goods">
+          <img class="goods_img" src="IMG/Dino Texas.jpg">
+          <p class="goods_name">DINO TEXAS</p>
+          <p class="goods_money">$84.80</p>
+          <a href="#" class="goods__button-pay">ADD TO CART &nbsp &#10010</a>
+          <a href="#" class="goods__shop-it_hover">
+            <img src="IMG/bag.png">
+            <p class="goods__shop-it_text">SHOP IT</p>
+          </a>
+        </div>
+        <div class="goods hide-640px">
+          <img class="goods_img" src="IMG/Bad dino.jpg">
+          <p class="goods_name">BAD DINO</p>
+          <p class="goods_money">$86.72</p>
+          <a href="#" class="goods__button-pay">ADD TO CART &nbsp &#10010</a>
+          <a href="#" class="goods__shop-it_hover">
+          <img src="IMG/bag.png">
+            <p class="goods__shop-it_text">SHOP IT</p>
+          </a>
+        </div>
+        <div class="goods hide-768px">
+          <img class="goods_img" src="IMG/Exdinosaur.jpg">
+          <p class="goods_name">EXDINOSAUR</p>
+          <p class="goods_money">$88.21</p>
+          <a href="#" class="goods__button-pay">ADD TO CART &nbsp &#10010</a>
+          <a href="#" class="goods__shop-it_hover">
+            <img src="IMG/bag.png">
+            <p class="goods__shop-it_text">SHOP IT</p>
+          </a>
+        </div>
+      </div>
+      <div class="container__inner container__inner_between goods__container__inside goods__container__inside_slider">
+        <div class="goods">
+          <img class="goods_img" src="IMG/Harry Hatchet.jpg">
+          <p class="goods_name">HARRY HATCHET JACKET</p>
+          <p class="goods_money">$98.14</p>
+          <a href="#" class="goods__button-pay">ADD TO CART &nbsp &#10010</a>
+          <a href="#" class="goods__shop-it_hover">
+            <img src="IMG/bag.png">
+            <p class="goods__shop-it_text">SHOP IT</p>
+          </a>
+        </div>
+        <div class="goods">
+          <img class="goods_img" src="IMG/ALTERNATIVE.jpg">
+          <p class="goods_name">ALTERNATIVE T-SHITY</p>
+          <p class="goods_money">$14.50</p>
+          <a href="#" class="goods__button-pay">ADD TO CART &nbsp &#10010</a>
+          <a href="#" class="goods__shop-it_hover">
+            <img src="IMG/bag.png">
+            <p class="goods__shop-it_text">SHOP IT</p>
+          </a>
+        </div>
+        <div class="goods hide-640px">
+          <img class="goods_img" src="IMG/AFFEX.jpg">
+          <p class="goods_name">AFFEX BOOTS</p>
+          <p class="goods_money">$40.14</p>
+          <a href="#" class="goods__button-pay">ADD TO CART &nbsp &#10010</a>
+          <a href="#" class="goods__shop-it_hover">
+          <img src="IMG/bag.png">
+            <p class="goods__shop-it_text">SHOP IT</p>
+          </a>
+        </div>
+        <div class="goods hide-768px">
+          <img class="goods_img" src="IMG/THRASHER.jpg">
+          <p class="goods_name">THRASHER CAP</p>
+          <p class="goods_money">$21.50</p>
+          <a href="#" class="goods__button-pay">ADD TO CART &nbsp &#10010</a>
+          <a href="#" class="goods__shop-it_hover">
+            <img src="IMG/bag.png">
+            <p class="goods__shop-it_text">SHOP IT</p>
+          </a>
+        </div>
+      </div>
+      <div class="container__inner container__inner_between goods__container__inside goods__container__inside_slider">
+        <div class="goods">
+          <img class="goods_img" src="IMG/KRAY socks.jpeg">
+          <p class="goods_name">KRAY SOCKS</p>
+          <p class="goods_money">$5.85</p>
+          <a href="#" class="goods__button-pay">ADD TO CART &nbsp &#10010</a>
+          <a href="#" class="goods__shop-it_hover">
+            <img src="IMG/bag.png">
+            <p class="goods__shop-it_text">SHOP IT</p>
+          </a>
+        </div>
+        <div class="goods">
+          <img class="goods_img" src="IMG/DINO SOCKS.jpeg">
+          <p class="goods_name">DINO SOCKS</p>
+          <p class="goods_money">$5.85</p>
+          <a href="#" class="goods__button-pay">ADD TO CART &nbsp &#10010</a>
+          <a href="#" class="goods__shop-it_hover">
+            <img src="IMG/bag.png">
+            <p class="goods__shop-it_text">SHOP IT</p>
+          </a>
+        </div>
+        <div class="goods hide-640px">
+          <img class="goods_img" src="IMG/SMILE SOCKS.jpeg">
+          <p class="goods_name">SMILE SOCKS</p>
+          <p class="goods_money">$5.85</p>
+          <a href="#" class="goods__button-pay">ADD TO CART &nbsp &#10010</a>
+          <a href="#" class="goods__shop-it_hover">
+          <img src="IMG/bag.png">
+            <p class="goods__shop-it_text">SHOP IT</p>
+          </a>
+        </div>
+        <div class="goods hide-768px">
+          <img class="goods_img" src="IMG/PALM SOCKS.png">
+          <p class="goods_name">PALM SOCKS</p>
+          <p class="goods_money">$5.85</p>
           <a href="#" class="goods__button-pay">ADD TO CART &nbsp &#10010</a>
           <a href="#" class="goods__shop-it_hover">
             <img src="IMG/bag.png">

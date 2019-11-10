@@ -476,6 +476,7 @@ body {
     cursor: pointer; 
 }
 
+.active_goods,
 .container__inner__menu-designers__links-text:hover,
 .container__inner__menu-designers__arrow__prev:hover,
 .container__inner__menu-designers__arrow__next:hover {
@@ -521,10 +522,9 @@ body {
     display: block;
 }
 
-.goods img {
+.goods_img {
     width: 220px;
-    height: 295px;
-    object-fit: none;
+    height: 295px;    
     object-position: top;
 }
 
@@ -543,8 +543,7 @@ body {
 .goods__shop-it_hover img {
     position: absolute;
     top: 43px;
-    left: -42px;
-    
+    left: 52px;    
 }
 
 .goods__shop-it_text {
