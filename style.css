@@ -151,8 +151,58 @@ body {
     padding-left: 17px;
 }
 
-.menu-optionally__icon {
-    display: none;
+.menu-optionally__icon {          
+    width: 32px;
+    height: 5px;
+    border-radius: 5px;     
+    background-color: white;
+    position: relative;   
+}
+
+.menu-optionally__icon-wrapper {
+    height: 28px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 17px;
+}
+
+.menu-optionally__icon::before,
+.menu-optionally__icon::after {
+    content: '';
+    width: 32px;
+    height: 5px;
+    border-radius: 5px;
+     
+    background-color: white;
+    display: block;
+    position: absolute; 
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;   
+}
+
+.menu-optionally__icon::before {
+    top: -10px;
+}
+
+.menu-optionally__icon::after {
+    top: 10px;
+}
+
+.menu-optionally__icon.menu-optionally__icon-active {
+    background-color: transparent;
+}
+
+.menu-optionally__icon.menu-optionally__icon-active::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.menu-optionally__icon.menu-optionally__icon-active::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 }
 
 /* Crazy   */
@@ -496,7 +546,7 @@ body {
     text-decoration: none;
     user-select: none;  
     cursor: pointer; 
-    transition: color 0.6s ease;
+    transition: 0.6s ease;
 }
 
 /* Goods */
@@ -850,30 +900,24 @@ body {
         position: relative;
     }
 
-    .menu-optionally__icon {
-        display: block;
-        height: 32px;
-        width: 32px;
-        margin-right: 17px;              
-    }
-
-    .menu-optionally__icon svg {
-        width: 30px;
-        height:30px;
-    }
-
     .menu-optionally__clearfix {
         position: absolute;
         background-color: #fd926d;
         right: 0;
-        top: 45px;
+        top: 48px;
         z-index: 1;
+        display: block;
+        width: 200px;
         display: none;
     }
 
+    .menu-optionally__clearfix-active {
+        display: block;
+    }
+
     .menu-optionally__clearfix li {
-        padding: 10px;
-        border-bottom: 1px solid #dd6b44;
+        padding: 10px;        
+        border-top: 1px solid #dd6b44;
     }
 
     .menu-optionally__clearfix li a {
@@ -1012,19 +1056,7 @@ body {
     .menu-optionally p {
         font-size: 30px;
     }
-
-    .menu-optionally .menu-optionally__icon {        
-        width: 32px;
-        height: 32px;
-        margin-right: 17px;
-    }
-
-    .menu-optionally__icon svg {
-        width:30px;
-        height: 30px;
-    }
-    
-
+  
     /* STAY UPDATE */
 
     .container_gray {
