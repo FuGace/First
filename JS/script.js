@@ -84,3 +84,94 @@ document.querySelector('.menu-optionally__icon-wrapper').onclick = function() {
       });  
 };
 
+let form = document.querySelector('.container__inner__stay__email');
+let email = document.querySelector('.container__inner__stay-updated__email_text');
+
+form.onsubmit = function(evt) {  
+    evt.preventDefault();
+    alert('Адрес ' + email.value + ' добавлен в список получателей рассылки.');
+};
+
+let assortmentData = [
+    {
+      inSale: false,      
+    },
+    {
+      inSale: true,
+    },
+    {
+      inSale: false,
+    },
+    {
+      inSale: true,
+    },
+    {
+      inSale: false,      
+    },
+    {
+      inSale: false,
+    },
+    {
+      inSale: true,
+    },
+    {
+      inSale: false,
+    },
+    {
+      inSale: false,      
+    },
+    {
+      inSale: true,
+    },
+    {
+      inSale: false,
+    },
+    {
+      inSale: true,
+    },
+    {
+      inSale: false,      
+    },
+    {
+      inSale: true,
+    },
+    {
+      inSale: false,
+    },
+    {
+      inSale: true,
+    },
+    {
+      inSale: false,      
+    },
+    {
+      inSale: true,
+    },
+    {
+      inSale: true,
+    },
+    {
+      inSale: false,
+    },     
+  ];
+
+let updateCardsSale = function (products) {
+    let elements = document.querySelectorAll('.goods');
+    for (let i = 0; i < elements.length; i++) {
+    let element = elements[i];
+    let product = products[i];
+        
+    let inSale;
+        
+    if(product.inSale) {
+        inSale = 'goods--sale';
+    }
+        
+    element.classList.add(inSale);
+        
+    
+    }
+};
+    
+ updateCardsSale(assortmentData);  
+    
