@@ -151,7 +151,7 @@ body {
 }
 
 .menu-optionally__icon {          
-    width: 32px;
+    width: 100%;
     height: 5px;
     border-radius: 5px;     
     background-color: white;
@@ -170,7 +170,7 @@ body {
 .menu-optionally__icon::before,
 .menu-optionally__icon::after {
     content: '';
-    width: 32px;
+    width: 100%;
     height: 5px;
     border-radius: 5px;
      
@@ -260,6 +260,7 @@ body {
 .container__inner__slider_crazy_prev:hover,
 .container__inner__slider_crazy_next:hover {
     background-color: #fd926d;
+    transition: 0.6s ease;
 }
 
 
@@ -279,6 +280,7 @@ body {
 .active,
 .container__dot:hover {
     color: #fd926d;
+    transition: 0.6s ease;
 }
 
 .container__inner_fade {
@@ -530,6 +532,7 @@ body {
 .container__inner__menu-designers__arrow__prev:hover,
 .container__inner__menu-designers__arrow__next:hover {
     background-color: #fd926d;
+    transition: 0.6s ease;
 }
 
 .container__inner__menu-designers {
@@ -590,6 +593,7 @@ body {
 
 .goods:hover {    
     transform: scale(1.08);
+    transition: 0.6s ease;
 }
 
 .goods:hover .goods__shop-it_hover{
@@ -932,7 +936,7 @@ body {
         z-index: 1;
         display: block;
         width: 200px;
-        display: none;
+        display: none;       
     }
 
     .menu-optionally__clearfix-active {
@@ -1073,7 +1077,30 @@ body {
     .menu-optionally p {
         font-size: 30px;
     }
+
+    .menu-optionally__clearfix {
+        top: 95px;
+    }
   
+    .menu-optionally__icon-wrapper {
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu-optionally__icon,
+    .menu-optionally__icon::after,
+    .menu-optionally__icon::before {
+        height: 10px;
+    }
+
+    .menu-optionally__icon::before {
+        top: -15px;
+    }
+    
+    .menu-optionally__icon::after {
+        top: 15px;
+    }
+
     /* STAY UPDATE */
 
     .container_gray {
@@ -1200,16 +1227,8 @@ body {
         height: 108px;
     }
 
-    .conteiner__footer__black .hamburger_icon {        
-        width: 32px;
-        height: 32px;
-        margin-left: 32px;
-        margin-right: 17px;
-    }
-
-    .conteiner__footer__black .hamburger_icon svg {
-        width: 30px;
-        height: 30px;
+    .container_black .menu-optionally__icon-wrapper {
+        margin: 0 0 0 17px;
     }
 
     .copyright {
