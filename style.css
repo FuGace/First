@@ -891,7 +891,7 @@ body {
     padding-left: 10px;
 }
 
-.hamburger_icon {
+.menu-optionally__icon-wrapper {
     display: none;
 }
 
@@ -978,6 +978,7 @@ body {
     .goods:hover .goods__shop-it_hover {
         display: none;
     }
+
 
 }
 
@@ -1228,7 +1229,8 @@ body {
     }
 
     .container_black .menu-optionally__icon-wrapper {
-        margin: 0 0 0 17px;
+        margin: 40px 0 0 17px;
+        display: block;
     }
 
     .copyright {
